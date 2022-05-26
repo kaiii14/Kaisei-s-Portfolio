@@ -78,6 +78,10 @@ video{
     width: 400px;
 }
 
+.video{
+    border: none;
+}
+
 .gray{
     background-color: #83868E;
     color: #fff;
@@ -500,6 +504,7 @@ footer{
 
     .about_content{
         width: 100%;
+        padding: 0;
     }
     
 
@@ -528,6 +533,25 @@ footer{
         padding-right: 1rem;
         font-weight: bold;
     }    
+
+    figure{
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    .video{
+        position: relative;
+        border: none;
+        height: 300px;
+    }
+
+    .video video{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+    }
 
 
     .contact_contents{
