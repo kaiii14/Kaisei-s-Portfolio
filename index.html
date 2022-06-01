@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -32,11 +32,11 @@
                     </nav>
                 </header>
             </div><!-- padding_wrapper -->
-                <div class="shape">
-                    <h1 class="main_title kaisei">KAISEI'S</h1>
-                    <h1 class="main_title">Portfolio</h1>    
-                </div>
-                <div class="scroll-btn"><img src="img/top_scroll.png" alt=""></div>
+            <div class="shape">
+                <h1 class="main_title kaisei">KAISEI'S</h1>
+                <h1 class="main_title">Portfolio</h1>
+            </div>
+            <div class="scroll-btn"><img src="img/top_scroll.png" alt=""></div>
         </div><!-- top_visual -->
 
         <div class="padding_wrapper">
@@ -44,14 +44,15 @@
                 <h2 class="title">About</h2>
                 <div class="about_content flex">
                     <article class="profile">
-                        <div class="name">
-                            <h3>内山　魁星</h3>
-                            <p>ウチヤマ　カイセイ</p>
-                        </div><!-- name -->
-                        <p>2000年生まれの21歳。<br>
-                            高校卒業後就職し、製造や販売を経験してきました。</p>
-                        <p>Web業界に憧れ、独学で学習し始め、<br>
-                            2021年11月から職業訓練にて「Webデザイナー養成科」を半年間受講しました。</p>
+                        <div class="flex">
+                            <img src="" alt="" class="profile_img">
+                            <div class="name">
+                                <h3>内山　魁星</h3>
+                                <p>ウチヤマ　カイセイ</p>
+                            </div><!-- name -->
+                        </div><!-- flex -->
+                        <p>2000年生まれの21歳です。</p>
+                        <p>Webを通して人に何かしらの良い影響を与えられるようなものを作って行きたいと思います。</p>
                     </article><!-- profile -->
                     <article class="history">
                         <dl class="flex">
@@ -70,6 +71,26 @@
                         </dl>
                     </article><!-- history -->
                 </div><!-- about_content -->
+
+
+                <section class="fav">
+                    <h2 class="title">Favorite</h2>
+                    <div class="flex">
+                        <figure class="fav_fig">
+                            <div class="fav_img"><img src="" alt=""></div>
+                            <figcaption>Game</figcaption>
+                        </figure>
+                        <figure class="fav_fig">
+                            <div class="fav_img"><img src="" alt=""></div>
+                            <figcaption>Drink</figcaption>
+                        </figure>
+                        <figure class="fav_fig">
+                            <div class="fav_img"><img src="" alt=""></div>
+                            <figcaption>texttexttexttext</figcaption>
+                        </figure>
+
+                    </div>
+                </section>
             </div><!-- about -->
         </div><!-- padding_wrapper -->
 
@@ -79,65 +100,82 @@
                 <h2 class="title">Skill</h2>
                 <div class="skill_contents">
 
-                    <div class="skill_content fadeLeftTrigger">
-                        <div class="skill_name flex">
-                            <p>HTML&CSS</p>
-                            <div class="skill_flex">
-                                <img class="skill_icon" src="img/2html.png" alt="">
-                                <img class="skill_icon" src="img/2css.png" alt="">
+                    <div class="skill_content fadeLeftTrigger flex">
+                        <div class="skill_left">
+                            <div class="skill_name flex">
+                                <p>HTML&CSS</p>
+                                <div class="skill_flex">
+                                    <img class="skill_icon" src="img/2html.png" alt="">
+                                    <img class="skill_icon" src="img/2css.png" alt="">
+                                </div>
+                            </div><!-- skill_name flex -->
+                            <img src="img/merter.png" alt="">
+                            <p>使用したテキストエディタ：　Visual Sutadio Code</p>
+                            <p>授業時間：<span class="class_time">130</span>時間</p>
+                        </div><!-- skill_left -->
+                        <p class="skill_description"> Webサイト制作に必須のマークアップ言語で あるHTMLを基礎からしました。<br>
+                            レイアウトの構成、各ブラウザサイズに応じた レスポンシブデザインについて学びました。</p>
+                    </div><!-- skill_content -->
+
+
+                    <div class="skill_content fadeRightTrigger flex">
+                        <div class="skill_left">
+                            <div class="skill_name flex">
+                                <p>JavaScript</p>
+                                <img class="skill_icon" src="img/2js.png" alt="">
                             </div>
-                        </div><!-- skill_name flex -->
-                        <img src="img/merter.png" alt="">
-                        <p>使用したテキストエディタ：　Visual Sutadio Code</p>
-                        <p>授業時間：<span class="class_time">130</span>時間</p>
+                            <img src="img/merter.png" alt="">
+                            <p>授業時間：<span class="class_time">60</span>時間</p>
+                        </div><!-- skill_left -->
+                        <p class="skill_description"> 「jQuery」などJavaScriptの基本技術を実践 的に学びました。</p>
                     </div><!-- skill_content -->
 
 
-                    <div class="skill_content fadeRightTrigger">
-                        <div class="skill_name flex">
-                            <p>JavaScript</p>
-                            <img class="skill_icon" src="img/2js.png" alt="">
-                        </div>
-                        <img src="img/merter.png" alt="">
-                        <p>授業時間：<span class="class_time">60</span>時間</p>
-                    </div><!-- skill_content -->
-
-
-                    <div class="skill_content fadeLeftTrigger">
-                        <div class="skill_name flex">
-                            <p>WordPress</p>
-                            <img src="img/2wp.png" alt="" class="skill_icon">
-                        </div>
-                        <img src="img/merter.png" alt="">
-                        <p>授業時間：<span class="class_time">54</span>時間</p>
-                    </div><!-- skill_content -->
-
-
-                    <div class="skill_content fadeRightTrigger">
-                        <div class="skill_name">
-                            <p>Illustrator &nbsp; PhotoShop &nbsp; Xd</p>
-                            <div class="skill_flex">
-                                <img src="img/illustraror.png" alt="" class="skill_icon">
-                                <img src="img/photoshop.png" alt="" class="skill_icon">
-                                <img src="img/XD.png" alt="" class="skill_icon">
+                    <div class="skill_content fadeLeftTrigger flex">
+                        <div class="skill_left">
+                            <div class="skill_name flex">
+                                <p>WordPress</p>
+                                <img src="img/2wp.png" alt="" class="skill_icon">
                             </div>
-                        </div>
-                        <img src="img/merter.png" alt="">
-                        <p>授業時間：<span class="class_time">50</span>時間</p>
+                            <img src="img/merter.png" alt="">
+                            <p>授業時間：<span class="class_time">54</span>時間</p>
+                        </div><!-- skill_left -->
+                        <p class="skill_description">圧倒的な人気を誇るホームページ作成ソフトを基本から学習しました。</p>
                     </div><!-- skill_content -->
 
 
-                    <div class="skill_content fadeLeftTrigger">
-                        <div class="skill_name">
-                            <p>Word &nbsp; Excel &nbsp; PowerPoint</p>
-                            <div class="skill_flex">
-                                <img src="img/office1.png" alt="" class="skill_icon">
-                                <img src="img/office2.png" alt="" class="skill_icon">
-                                <img src="img/office3.png" alt="" class="skill_icon">
+                    <div class="skill_content fadeRightTrigger flex">
+                        <div class="skill_left">
+                            <div class="skill_name">
+                                <p>Illustrator &nbsp; PhotoShop &nbsp; Xd</p>
+                                <div class="skill_flex">
+                                    <img src="img/illustraror.png" alt="" class="skill_icon">
+                                    <img src="img/photoshop.png" alt="" class="skill_icon">
+                                    <img src="img/XD.png" alt="" class="skill_icon">
+                                </div><!-- skill_flex -->
+                            </div><!-- skill_name -->
+                            <img src="img/merter.png" alt="">
+                            <p>授業時間：<span class="class_time">50</span>時間</p>
+                        </div><!-- skill_left -->
+                        <p class="skill_description">イラストやロゴマーク、アイコン作成、デザインカンプなどの作成、<br>
+                            基本操作から実務で使えるデザインテクニックを学習しました。</p>
+                    </div><!-- skill_content -->
+
+
+                    <div class="skill_content fadeLeftTrigger flex">
+                        <div class="skill_left">
+                            <div class="skill_name">
+                                <p>Office365</p>
+                                <div class="skill_flex">
+                                    <img src="img/office1.png" alt="" class="skill_icon">
+                                    <img src="img/office2.png" alt="" class="skill_icon">
+                                    <img src="img/office3.png" alt="" class="skill_icon">
+                                </div>
                             </div>
-                        </div>
-                        <img src="img/merter.png" alt="">
-                        <p>授業時間：<span class="class_time">63</span>時間</p>
+                            <img src="img/merter.png" alt="">
+                            <p>授業時間：<span class="class_time">63</span>時間</p>
+                        </div><!-- skill_left -->
+                        <p class="skill_description">ビジネス文書、プレゼン資料作成等、幅広く使用されているオフィス365を学びました。</p>
                     </div><!-- skill_content -->
 
 
@@ -187,7 +225,8 @@
         </div><!-- padding_wrapper -->
     </div><!-- wrapper -->
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 

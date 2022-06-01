@@ -14,7 +14,7 @@ function fadeAnime(){
     
     
         $('.fadeLeftTrigger').each(function(){ //fadeLeftTriggerというクラス名が
-            var elemPos = $(this).offset().top-30;//要素より、50px上の
+            var elemPos = $(this).offset().top-20;//要素より、50px上の
             var scroll = $(window).scrollTop();
             var windowHeight = $(window).height();
             if (scroll >= elemPos - windowHeight){
