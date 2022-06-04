@@ -227,6 +227,10 @@ nav li a:hover::after{
     border: 1px solid #000;
 }
 
+.profile .flex{
+    margin: 1.5rem;
+}
+
 .profile_img{
     width: 200px;
     height: 200px;
@@ -441,22 +445,15 @@ figure{
     margin: 0 auto;
 }
 
-figure img{
+.work_figure img{
     width: 100%;
     height: auto;
     border: 1px solid #000;
 }
 
-.video{
-    position: relative;
-    border: none;
-}
-
 .video video{
     width: 100%;
     height: auto;
-    position: absolute;
-    top: 0;
 }
 
 
