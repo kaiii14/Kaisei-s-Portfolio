@@ -45,7 +45,7 @@
         border-radius: 50% 38% 50% 62%/35% 61% 56% 65%;
     }
     80% {
-        border-radius: 20% 39% 50% 70%/45% 71% 29% 45%;
+        border-radius: 70% 39% 50% 70%/45% 71% 29% 45%;
     }
     90% {
         border-radius: 60% 43% 55% 70%/35% 61% 49% 55%;
@@ -169,7 +169,7 @@ nav li a:hover::after{
     margin: 0 auto;
     margin-top: 10vh;
     border-radius: 50%;
-    animation: shape1 60s ease 0s infinite;
+    animation: shape1 40s ease 0s infinite;
     position: relative;
 }
 
@@ -295,7 +295,7 @@ dt{
 }
 
 .skill_contents{
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -306,10 +306,20 @@ dt{
     margin-bottom: 10rem;
 }
 
-.skill_left{
-    width: 80%;
+.skill_column{
+    width: 400px;;
     margin-right: 2rem;
     text-align: center;
+}
+
+.skill_right{
+    order: 2;
+    width: 400px;
+}
+
+.des_left{
+    order: 1;
+    padding-right: 2rem;
 }
 
 .skill_name{
@@ -318,6 +328,7 @@ dt{
 
 .skill_flex{
     justify-content: center;
+    white-space: nowrap;
 }
 
 .skill_content p{
@@ -347,7 +358,9 @@ dt{
 }
 
 .skill_description{
+    width:500px;
     padding-top: 8rem;
+    text-align-last: left;
 }
 
 
