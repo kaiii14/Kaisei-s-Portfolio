@@ -277,6 +277,7 @@ dt{
 
 .fav_fig{
     width: 350px;
+    padding:2rem;
     padding-top: 1em;
     border: 1px solid #000;
     text-align: center;
@@ -534,6 +535,10 @@ footer{
         padding: 0 0.25rem;
     }
 
+    .title{
+        margin-bottom: 1rem;
+    }
+
 
     header{
         text-align: center;
@@ -601,13 +606,40 @@ footer{
     .scroll-btn {
         text-align: center;
     }
-
+/* ==================================
+about
+=====================================*/
 
     .about_content{
         width: 100%;
         padding: 0;
     }
-    
+
+    .profile{
+        margin-bottom: 2rem;
+    }
+
+    .profile .flex{
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .profile_img{
+        margin:0 auto;
+    }
+
+    .fav_fig{
+        margin-bottom: 3rem;
+        height: auto;
+    }
+
+    /* ==================================
+    skill
+    =====================================*/
+
+    .skill{
+        margin-top: 5rem;
+    }
 
     .skill_contents{
         margin: 0;
@@ -629,11 +661,25 @@ footer{
         text-align: center;
     }
 
+    .skill_right{
+        width: 100%;
+        order: 1;
+    }
+
     .skill_name p{
         font-size: 2.5rem;
         padding-right: 1rem;
         font-weight: bold;
     }    
+
+    .skill_column{
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    .skill_description{
+        padding: 0;
+    }
 
     figure{
         width: 200px;
