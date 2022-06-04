@@ -409,6 +409,7 @@ dt{
 -works
 ========================================================*/
 .works{
+    padding: 2rem;
     padding-bottom: 8rem;
 }
 
@@ -418,11 +419,29 @@ dt{
 }
 
 figure{
-    border: 1px solid #000;
-    width: 400px;
-    height: 400px;
+    width: 100%;
     margin: 0 auto;
 }
+
+figure img{
+    width: 100%;
+    height: auto;
+    border: 1px solid #000;
+}
+
+.video{
+    position: relative;
+    border: none;
+}
+
+.video video{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+}
+
+
 /* ====================================================
 -contact
 ========================================================*/
