@@ -279,7 +279,7 @@ dt{
     width: 350px;
     padding:2rem;
     padding-top: 1em;
-    border: 1px solid #000;
+    border: 1px solid #00169f;
     text-align: center;
 }
 
@@ -519,9 +519,6 @@ footer{
         flex-direction:column;
     }
 
-    p{
-        font-size: 0.5rem;
-    }
 
     h3{
         font-size: 2.5rem;
@@ -659,7 +656,18 @@ about
     .skill_content{
         font-size: 3rem;
         text-align: center;
+        margin-bottom: 5.5rem;
     }
+
+    .skill_content p{
+        padding-bottom: 0.5rem;
+        font-size: 1.25rem;
+    }
+    
+    .skill_content img{
+        padding-bottom:0.51rem;
+    }
+    
 
     .skill_right{
         width: 100%;
@@ -681,11 +689,6 @@ about
         padding: 0;
     }
 
-    figure{
-        width: 200px;
-        height: 200px;
-        margin: 0 auto;
-    }
 
     .video{
         position: relative;
