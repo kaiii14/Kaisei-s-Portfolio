@@ -147,6 +147,10 @@ about
     font-size: 20px;
 }
 
+.history{
+    margin-bottom: 100px;
+}
+
 dl{
     display: flex;
     justify-content: space-between;
