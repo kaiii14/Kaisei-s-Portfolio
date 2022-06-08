@@ -5,27 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="wrapper">
         <div class="main-visual">
+            <video src="../img/guradation.mp4" class="main_video" muted autoplay loop></video>
             <header>
                 <h1>PORTFOLIO</h1>
-                <nav>
+                <nav class="nav_pc">
                     <ul>
                         <li>About</li>
                         <li>Skill</li>
                         <li>Works</li>
                         <li>Contact</li>
                     </ul>
-                </nav>
-            </header>
+                </nav><!-- nav_pc -->
 
-            <h1 class="main_title-1">KAISEI'S</h1>
-            <h1 class="main_title-2">PORTFOLIO</h1>
+                <div class="hamburger_menu">
+                    <span class="span1"></span>
+                    <span class="span2"></span>
+                    <span class="span3"></span>
+                </div><!-- hamburger_menu -->
+            </header>
+            <nav>
+                <ul>
+                    <li>About</li>
+                    <li>Skill</li>
+                    <li>Works</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+
+
+            <div class="main_title">
+                <h1 class="title-1">KAISEI'S</h1>
+                <h1 class="title-2">PORTFOLIO</h1>
+            </div><!-- main_title -->
         </div><!-- main-visual -->
 
-        <div class="about" id="about">
+        <section class="about" id="about">
+            <h2 class="title">About</h2>
             <div class="profile">
                 <div class="profile-img"><img src="" alt=""></div>
                 <div class="name">
@@ -48,7 +71,163 @@
                     <dd>ハローワークへ行った時、<br>職業訓練で「Webデザイナー養成科」を見つけ、もう一度憧れた業界で働きたいと思い受講する。</dd>
                 </dl>
             </div><!-- history -->
-        </div><!-- aobut -->
+
+            <div class="favorite">
+                <h2 class="title">Favorite</h2>
+                <div class="swiper mySwiper sp">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <div class="fav_img"><img src="" alt=""></div>
+                          <p>Game</p>
+                          <p>最近は「ApexLedgends」というFPSゲームを友達とやっています。</p>
+                      </div><!-- swiper-slide -->
+                      <div class="swiper-slide">
+                        <div class="fav_img"><img src="" alt=""></div>
+                        <p>Dog</p>
+                        <p>動物全般好きですが、その中でも「ミニチュアダックスフンド」が好きです。<br>将来、絶対飼いたいと思っています。</p>
+                    </div><!-- swiper-slide -->
+                    <div class="swiper-slide">
+                        <div class="fav_img"><img src="" alt=""></div>
+                        <p>Manga</p>
+                        <p>漫画のアプリを9つくらいインストールして読んでいます。<br>韓国のWeb漫画がイラストが綺麗でストーリーも面白いのでおすすめです。</p>
+                    </div><!-- swiper-slide -->
+
+                    </div><!-- swiper-wrapper -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div><!-- favorite -->
+        </section><!-- aobut -->
+
+        <section class="skill" id="skill">
+            <h2 class="title">Skill</h2>
+
+
+            <div class="coding">
+                <h2 class="title">Coding</h2>
+                <div class="skill_wrapper">
+                    <div class="skill_item">
+                        <div class="skill_name">
+                            <h3>HTML5</h3>
+                            <div class="skill_img"><img src="" alt=""></div>
+                        </div><!-- skill_name -->
+                        <p>Webサイト制作に必須のマークアップ言語であるHTMLを基礎から学習しました。</p>
+                    </div><!-- skill_item -->
+
+                    <div class="skill_item">
+                        <div class="skill_name">
+                            <h3>CSS3</h3>
+                            <div class="skill_img"><img src="" alt=""></div>
+                        </div><!-- skill_name -->
+                        <p>レイアウトの構成、各ブラウザサイズに応じたレスポンシブデザインについて学びました。</p>
+                    </div><!-- skill_item -->
+
+                    <div class="skill_item">
+                        <div class="skill_name">
+                            <h3>JavaScript</h3>
+                            <div class="skill_img"><img src="" alt=""></div>
+                        </div><!-- skill_name -->
+                        <p>「Jquery」などJavaScriptの基本秘術を実践的に学びました。</p>
+                    </div><!-- skill_item -->
+
+                    <div class="skill_item">
+                        <div class="skill_name">
+                            <h3>WordPress</h3>
+                            <div class="skill_img"><img src="" alt=""></div>
+                        </div><!-- skill_name -->
+                        <p>圧倒的な人気を誇るホームページ作成ソフトを基本から学びました。</p>
+                    </div><!-- skill_item -->
+                </div><!-- skill_wrapper -->
+            </div><!-- skill -->
+
+
+
+            <div class="design">
+                <h2 class="title">Design</h2>
+                <div class="skill_wrapper">
+                    <div class="skill_item">
+                        <div class="skill_name">
+                            <h3>Illustrator</h3>
+                            <div class="skill_img"><img src="" alt=""></div>
+                        </div><!-- skill_name -->
+                        <p>Webサイト制作に必須のマークアップ言語であるHTMLを基礎から学習しました。</p>
+                    </div><!-- skill_item -->
+
+                    <div class="skill_item">
+                        <div class="skill_name">
+                            <h3>Photoshop</h3>
+                            <div class="skill_img"><img src="" alt=""></div>
+                        </div><!-- skill_name -->
+                        <p>基本操作から実務で使えるデザインテクニッ クを学習しデザインを学びました。</p>
+                    </div><!-- skill_item -->
+
+                    <div class="skill_item">
+                        <div class="skill_name">
+                            <h3>XD</h3>
+                            <div class="skill_img"><img src="" alt=""></div>
+                        </div><!-- skill_name -->
+                        <p>操作を基礎から学びデザインカンプの作成等 実践で活用できるための学習をしました。</p>
+                    </div><!-- skill_item -->
+                </div><!-- skill_wrapper -->
+            </div><!-- design -->
+
+
+            <div class="office">
+                <h2 class="title">Office</h2>
+                <div class="skill_wrapper">
+                    <div class="skill_item">
+                        <div class="skill_name">
+                            <h3>Office365</h3>
+                            <div class="skill_img"><img src="" alt=""></div>
+                        </div><!-- skill_name -->
+                        <p>ビジネス文書、プレゼン資料作成等、幅広く使用されているオフィス365を学びました。</p>
+                    </div><!-- skill_item -->
+                </div><!-- skill_wrapper -->
+            </div><!-- design -->
+
+        </section><!-- skill -->
+
+
+        <section class="works" id="works">
+            <div class="work">
+                <div class="work_img"><img src="" alt=""></div>
+                <p>コーポーレートサイト<br>https://kaiii.github.io/Kaisei-s-Portfolio/cooperatesite/<br>架空のコーポレートサイトを制作しました。
+                    また、レスポンシブ対応も行いました。</p>
+            </div><!-- work -->
+
+            <div class="work">
+                <div class="work_img"><img src="" alt=""></div>
+                <p>ちどり化粧品店&emsp13;様<br>https://pc-hana.com/chidori/team-b/<br>メインコーダーとして、チームで制作をしお客様へ提案を行いました。</p>
+            </div><!-- work -->
+
+
+            <div class="work">
+                <div class="work_img"><img src="" alt=""></div>
+                <p>サイト<br>https://kaiii.github.io/Kaisei-s-Portfolio/dogcafe<br>架空の犬カフェのホームページサイトを制作しました。</p>
+            </div><!-- work -->
+
+        </section><!-- works -->
+
+
+        <section class="contact">
+            <h2 class="title">Contact</h2>
+            <p>お仕事のご相談・ご質問などがありましたら以下の連絡先にてご連絡をお願い致します。<br>Twitter・InstagramのDMでも受け付けております。</p>
+            <dl class="contact_dl">
+                <dt>Mail</dt>
+                <dd>u.kaisei14@gmail.com</dd>
+            </dl>
+            <dl class="contact_dl">
+                <dt>Twitter</dt>
+                <dd>@u_kaisei0009</dd>
+            </dl>
+        </section><!-- contact -->
+
+        <footer>
+            <small>&copy;2022&nbsp;UCHIYAMA&nbsp;KAISEI</small>
+        </footer>
     </div><!-- wrapper -->
+
+    <script src="script.js"></script>
 </body>
 </html>
