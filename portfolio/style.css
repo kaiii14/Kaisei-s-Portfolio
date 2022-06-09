@@ -21,6 +21,7 @@ img{
 
 .title{
     font-size: 50px;
+    margin-bottom: 36px;
 }
 
 .main-visual{
@@ -123,8 +124,10 @@ nav li{
 /* =============================
 about
 ===============================*/
+.about{
+    padding-bottom: 105px;
+}
 .profile{
-    padding-top: 36px;
     margin-bottom: 50px;
     text-align: center;
 }
@@ -171,3 +174,101 @@ dd{
     width: 70%;
 }
 
+
+/* ===============================
+favorite
+==================================*/
+.fav_img{
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.swiper-slide{
+    text-align: center;
+    border: 1px solid #000;
+    padding: 0 39px;
+    padding-top: 60px;
+    padding-bottom: 23px;
+}
+
+.fav_title{
+    font-size: 28px;
+    margin-bottom: 27px;
+}
+
+/* ================================
+skill
+==================================*/
+.skill{
+    background-color: #7E828B;
+    color: #fff;
+    padding-top: 28px;
+    padding-bottom: 70px;
+}
+
+.skill .title{
+    margin-bottom: 0;
+}
+
+.skill_wrapper{
+    border: 1px solid #fff;
+    padding: 0 18px;
+    padding-top: 60px;
+}
+
+.skill_img{
+    width: 90px;
+    height: 90px;
+}
+
+.skill_name{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.skill_name h3{
+    padding-top: 16px;
+}
+
+.skill_name h3{
+    font-size: 35px;
+}
+
+.skill_item p{
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.skill_item{
+    margin-bottom: 58px;
+}
+
+.coding{
+    margin-bottom:63px  ;
+}
+
+/* ================================
+works
+==================================*/
+.works{
+    padding-top: 90px;
+}
+
+.work{
+    margin-bottom: 70px;
+}
+
+.work_img{
+    height: 200px;
+}
+
+/* ================================
+contact
+==================================*/
+.contact{
+    background-color: #7E828B;
+    color: #fff;padding-top: 42px;
+}
