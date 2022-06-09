@@ -52,7 +52,7 @@ header{
     padding: 8px 0;
     text-align: center;
     color: #fff;
-    background-color: aqua;
+    background-color: rgba(0, 255, 255,0.5);
 }
 
 header h1{
@@ -113,11 +113,11 @@ haamburger_menu
     font-size: 65px;
 }
 
-nav{
+.nav_sp{
     position: fixed;
     background-color: rgba(255, 255, 255, 0.9);
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
     padding-top: 200px;
     padding-left: 50px;
     z-index: 90;
@@ -128,6 +128,11 @@ nav{
 
 nav li{
     margin-bottom: 2rem;
+}
+
+#nav_sp a:hover{
+    opacity: 0.2;
+    border-bottom: 1px solid #000;
 }
 
 .open{
@@ -324,3 +329,35 @@ footer{
 small{
     font-size: 15px;
 }
+
+
+
+/* ================================
+>=768px
+===================================*/
+@media screen and (min-width:768px) {
+    .nav_pc{
+        display: block;
+    }
+
+    #hamburger_menu,#nav_sp{
+        display: none;
+    }
+
+    header{
+    }
+
+    .header_wrapper{
+        display: flex;
+        justify-content: space-between ;
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+
+    .nav_pc ul{
+        display:flex ;
+    }
+
+
+    
+}/*media screen*/
