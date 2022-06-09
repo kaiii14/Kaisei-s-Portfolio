@@ -270,5 +270,43 @@ contact
 ==================================*/
 .contact{
     background-color: #7E828B;
-    color: #fff;padding-top: 42px;
+    color: #fff;
+    padding-top: 42px;
+    padding-bottom: 60px;
+}
+
+
+.contact_sentence{
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 40px 0;
+    margin-bottom: 54px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.contact dl{
+    background-image: none;
+    padding: 0;
+}
+
+.contact dt{
+    font-size: 25px;
+}
+.contact dd{
+    font-size: 20px;
+    text-align: right;
+}
+
+/* ================================
+footer
+==================================*/
+footer{
+    height: 60px;
+    text-align: center;
+    padding:20px 0 ;
+}
+
+small{
+    font-size: 15px;
 }
