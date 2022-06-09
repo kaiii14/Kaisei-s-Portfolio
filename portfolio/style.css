@@ -11,6 +11,11 @@ img{
     height: 100%;
 }
 
+a{
+    text-decoration: none;
+    color: #000;
+}
+
 .wrapper{
     overflow: hidden;
 }
@@ -58,7 +63,10 @@ header h1{
     display: none;
 }
 
-.hamburger_menu{
+/* ===================================
+haamburger_menu
+======================================*/
+#hamburger_menu{
     position: relative;
     position: fixed;
     z-index: 100;
@@ -90,11 +98,12 @@ header h1{
 .span3{
     top: 32px;
 }
+/* ==================================== */
 
 .main_title{
     position: absolute;
     left: -120px;
-    bottom: 150px;
+    bottom: 180px;
     transform: rotate(90deg);
     line-height: 1;
     color: #fff;
@@ -111,13 +120,18 @@ nav{
     width: 100vh;
     padding-top: 200px;
     padding-left: 50px;
-    z-index: 200;
+    z-index: 90;
     font-size: 28px;
-    transform: translateX(-100%);
+    transform: translateX(100%);
+    transition: all 2s;
 }
 
 nav li{
     margin-bottom: 2rem;
+}
+
+.open{
+    transform: translateX(0);
 }
 
 
