@@ -34,16 +34,3 @@ for (let i = 0; i < nav_a.length; i++) {
 }
 
 
-let window_w = window.innerWidth;
-let breakpoint = 768;
-
-if(breakpoint<=window_w){
-    swiper.destroy();
-}else{
-    swiper.destroy(false);
-}
-
-
-
-
-
