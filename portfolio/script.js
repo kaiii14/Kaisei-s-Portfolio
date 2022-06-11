@@ -20,15 +20,30 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
-let nav =document.getElementById('nav_sp');
-document.getElementById('hamburger_menu').onclick=function(){
+let nav = document.getElementById('nav_sp');
+document.getElementById('hamburger_menu').onclick = function () {
     nav.classList.toggle("open");
 }
 
 
 let nav_a = nav.querySelectorAll('a');
-        for(let i = 0; i < nav_a.length; i++) {
-          nav_a[i].addEventListener('click', function() {
-            nav.classList.remove("open");
-          });
-        }
+for (let i = 0; i < nav_a.length; i++) {
+    nav_a[i].addEventListener('click', function () {
+        nav.classList.remove("open");
+    });
+}
+
+
+let window_w = window.innerWidth;
+let breakpoint = 768;
+
+if(breakpoint<=window_w){
+    swiper.destroy();
+}else{
+    swiper.destroy(false);
+}
+
+
+
+
+

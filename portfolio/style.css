@@ -22,6 +22,8 @@ a{
 
 .padding_wrapper{
     padding: 0 24px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .title{
@@ -336,6 +338,15 @@ small{
 >=768px
 ===================================*/
 @media screen and (min-width:768px) {
+
+    .flex{
+        display: flex;
+    }
+
+    .title{
+        font-size: 65px;
+    }
+
     .nav_pc{
         display: block;
     }
@@ -344,20 +355,99 @@ small{
         display: none;
     }
 
-    header{
-    }
 
     .header_wrapper{
         display: flex;
         justify-content: space-between ;
         max-width: 1500px;
         margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    .header_wrapper h1{
+        font-size: 65px;
+    }
+
+
+    .nav_pc{
+        width: 600px;
     }
 
     .nav_pc ul{
         display:flex ;
+        font-size: 40px ;
+        padding-top: 16px;
+        justify-content: space-between;
     }
 
+
+
+    .main_title{
+        left: 50%;
+        bottom: 50%;
+        transform: rotate(0) translate(-50%,50%);
+        text-align: center;
+        line-height: 1.25;
+    }
+    
+    .main_title h1{
+        font-size: 130px;
+    }
+
+
+    /* =============================
+about
+===============================*/
+.profile{
+    border: 1px solid #000;
+    padding: 60px 60px 20px;
+}
+
+.profile_img{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 17px;
+}
+
+.name{
+    font-size: 70px;
+    margin-bottom: 44px;
+    padding-top: 90px;
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+}
+.name p:nth-child(2){
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.profile_sentence{
+    font-size: 28px;
+    text-align: left;
+}
+
+.history{
+    margin-bottom: 100px;
+    border: 1px solid #000;
+    padding: 40px 30px 40px 100px;
+}
+
+dl{
+    padding:0;
+    background-image: none;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+dl:last-child{
+    background-image: none;
+}
+
+
+
+    
 
     
 }/*media screen*/
