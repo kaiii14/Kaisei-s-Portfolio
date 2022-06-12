@@ -5,252 +5,256 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex">
-    <title>KAISEI's Portfolio</title>
+    <title>portfolio</title>
 
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap" rel="stylesheet">
 
+    <!-- css -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="top_visual gray">
-            <div class="padding_wrapper_head">
-                <header class="flex">
-                    <h1>Portfolio</h1>
-                    <nav>
-                        <ul class="nav flex">
-                            <li><a href="#about">about</a></li>
-                            <li><a href="#skill">skill</a></li>
-                            <li><a href="#works">works</a></li>
-                            <li><a href="#contact">contact</a></li>
+        <div class="main-visual">
+            <video src="../img/guradation.mp4" class="main_video" muted autoplay loop></video>
+            <header>
+                <div class="header_wrapper">
+                    <h1>PORTFOLIO</h1>
+                    <nav class="nav_pc">
+                        <ul>
+                            <li>About</li>
+                            <li>Skill</li>
+                            <li>Works</li>
+                            <li>Contact</li>
                         </ul>
-                    </nav>
-                </header>
-            </div><!-- padding_wrapper -->
-            <div class="shape">
-                <h1 class="main_title kaisei">KAISEI'S</h1>
-                <h1 class="main_title">Portfolio</h1>
-            </div>
-            <div class="scroll-btn"><img src="img/top_scroll.png" alt=""></div>
-        </div><!-- top_visual -->
+                    </nav><!-- nav_pc -->
+                </div><!-- header_wrapper -->
+                <div id="hamburger_menu">
+                    <span class="span1"></span>
+                    <span class="span2"></span>
+                    <span class="span3"></span>
+                </div><!-- hamburger_menu -->
+            </header>
+            <nav id="nav_sp" class="nav_sp">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skill">Skill</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+
+            <div class="main_title">
+                <h1 class="title-1">KAISEI'S</h1>
+                <h1 class="title-2">PORTFOLIO</h1>
+            </div><!-- main_title -->
+        </div><!-- main-visual -->
 
         <div class="padding_wrapper">
-            <div class="about" id="about">
+            <section class="about" id="about">
                 <h2 class="title">About</h2>
-                <div class="about_content flex">
-                    <article class="profile">
-                        <div class="flex">
-                            <img src="img/profile_img.jpg" alt="" class="profile_img">
-                            <div class="name">
-                                <h3>内山　魁星</h3>
-                                <p>ウチヤマ　カイセイ</p>
-                            </div><!-- name -->
-                        </div><!-- flex -->
-                        <p>2000年生まれの21歳です。</p>
-                        <p>場所や働き方に縛られないことに憧れて、HTMLやCSSを独学で始めて、2021年11月から職業訓練校に通いスキルをつけました。</p>
-                        <p>現在はWebを通して人に何かしらの良い影響を与えられるようなものを作って行きたいと思います。</p>
-                    </article><!-- profile -->
-                    <article class="history">
-                        <dl class="flex">
-                            <dt><span class="year">2019</span>年</dt>
-                            <dd>普通科高校を卒業し、製造関係の仕事に就く。<br>
-                            職業柄、何事も一度は再確認するようになる。</dd>
-                        </dl>
-                        <dl class="flex">
-                            <dt><span class="year">2020</span>年</dt>
-                            <dd>これからの発展していくものを学びたいと、WebやIT関係に興味を持つ。<br>
-                                退職をし、販売の仕事をしながらHTMLやCSSの学習を始めるも途中で挫折。</dd>
-                        </dl>
-                        <dl class="flex">
-                            <dt><span class="year">2021</span>年</dt>
-                            <dd>ハローワークへ行った時、<br>「Webデザイナー養成科」の文字を見つけ、もう一度憧れの業界で働きたいと思い受講する。</dd>
-                        </dl>
-                    </article><!-- history -->
-                </div><!-- about_content -->
-
-
-                <section class="fav">
-                    <h2 class="title">Favorite</h2>
+                <div class="profile">
                     <div class="flex">
-                        <figure class="fav_fig">
-                            <div class="fav_img"><img src="" alt=""></div>
-                            <figcaption>
+                        <div class="profile_img"><img src="../img/profile_img.jpg" alt=""></div>
+                        <div class="name">
+                            <p>内山　魁星</p>
+                            <p>ウチヤマ　カイセイ</p>
+                        </div><!-- name -->
+                    </div><!-- flex -->
+                    <p class="profile_sentence">
+                        2000年生まれの21歳です。<br>場所や働き方に縛られないことに憧れて、HTMLやCSSを独学で始めて、2021年11月から職業訓練校に通いスキルを身につけました。<br>現在はWebを通じて人に何かしらの影響を与えられるようなものを作っていきたいと思います。
+                    </p>
+                </div><!-- profile -->
+                <div class="history">
+                    <dl>
+                        <dt>2019年</dt>
+                        <dd>普通科高校を卒業し、製造関係の仕事に就く。<br>品質管理チームで業務、品質改善に注力する。</dd>
+                    </dl>
+                    <dl>
+                        <dt>2020年</dt>
+                        <dd>これから発展していくものを学びたいと、WebやIT関係に興味を持つ。<br>退職をし、販売の仕事をしながらHTMLやCSSの学習を始めるも途中で挫折。</dd>
+                    </dl>
+                    <dl>
+                        <dt>2021年</dt>
+                        <dd>ハローワークへ行った時、<br>職業訓練で「Webデザイナー養成科」を見つけ、もう一度憧れた業界で働きたいと思い受講する。</dd>
+                    </dl>
+                </div><!-- history -->
+                <div class="favorite">
+                    <h2 class="title">Favorite</h2>
+                    <div class="swiper mySwiper sp">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="fav_img"><img src="" alt=""></div>
                                 <p class="fav_title">Game</p>
-                                <p>最近は、「ApexLedgens」というFPSゲームを友達とやっています。</p>
-                            </figcaption>
-                        </figure>
-                        <figure class="fav_fig">
-                            <div class="fav_img"><img src="" alt=""></div>
-                            <figcaption>
+                                <p>最近は「ApexLedgends」というFPSゲームを友達とやっています。</p>
+                            </div><!-- swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="fav_img"><img src="" alt=""></div>
                                 <p class="fav_title">Dog</p>
-                                <p>動物全般好きですが、<br>その中でも「ミニチュアダックスフンド」が好きです。<br>将来、絶対飼いたいと思っています。</p>
-                            </figcaption>
-                        </figure>
-                        <figure class="fav_fig">
-                            <div class="fav_img"><img src="" alt=""></div>
-                            <figcaption>
+                                <p>動物全般好きですが、その中でも「ミニチュアダックスフンド」が好きです。<br>将来、絶対飼いたいと思っています。</p>
+                            </div><!-- swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="fav_img"><img src="" alt=""></div>
                                 <p class="fav_title">Manga</p>
-                                <p>漫画のアプリを9つくらいインストールして読むくらい好きです。<br>韓国のweb漫画が絵が綺麗でストーリーも面白いのでおすすめです。</p>
-                            </figcaption>
-                        </figure>
+                                <p>漫画のアプリを9つくらいインストールして読んでいます。<br>韓国のWeb漫画がイラストが綺麗でストーリーも面白いのでおすすめです。</p>
+                            </div><!-- swiper-slide -->
+                        </div><!-- swiper-wrapper -->
+                    </div><!-- swiper -->
 
-                    </div>
-                </section>
-            </div><!-- about -->
+                    <div class="fav_container">
+                        <div class="fav_item">
+                            <div class="fav_img"><img src="" alt=""></div>
+                            <p class="fav_title">Game</p>
+                            <p>最近は「ApexLedgends」というFPSゲームを友達とやっています。</p>
+                        </div><!-- fav_item -->
+
+                        <div class="fav_item">
+                            <div class="fav_img"><img src="" alt=""></div>
+                            <p class="fav_title">Dog</p>
+                            <p>動物全般好きですが、その中でも「ミニチュアダックスフンド」が好きです。<br>将来、絶対飼いたいと思っています。</p>
+                        </div><!-- fav_item -->
+
+                        <div class="fav_item">
+                            <div class="fav_img"><img src="" alt=""></div>
+                            <p class="fav_title">Manga</p>
+                            <p>漫画のアプリを9つくらいインストールして読んでいます。<br>韓国のWeb漫画がイラストが綺麗でストーリーも面白いのでおすすめです。</p>
+                        </div><!-- fav_item -->
+
+                    </div><!-- fav_container -->
+                </div><!-- favorite -->
+            </section><!-- aobut -->
         </div><!-- padding_wrapper -->
 
-
-        <div class="skill gray" id="skill">
+        <section class="skill" id="skill">
             <div class="padding_wrapper">
                 <h2 class="title">Skill</h2>
-                <div class="skill_contents">
-
-                    <div class="skill_content fadeLeftTrigger flex">
-                        <div class="skill_column">
-                            <div class="skill_name flex">
-                                <p>HTML&CSS</p>
-                                <div class="skill_flex">
-                                    <img class="skill_icon" src="img/2html.png" alt="">
-                                    <img class="skill_icon" src="img/2css.png" alt="">
-                                </div>
-                            </div><!-- skill_name flex -->
-                            <img src="img/merter.png" alt="">
-                            <p>使用したテキストエディタ：　Visual Sutadio Code</p>
-                            <p>授業時間：<span class="class_time">130</span>時間</p>
-                        </div><!-- skill_column -->
-                        <p class="skill_description"> Webサイト制作に必須のマークアップ言語で あるHTMLを基礎からしました。<br>
-                            レイアウトの構成、各ブラウザサイズに応じた レスポンシブデザインについて学びました。</p>
-                    </div><!-- skill_content -->
-
-
-                    <div class="skill_content fadeRightTrigger flex">
-                        <div class="skill_column skill_right">
-                            <div class="skill_name flex">
-                                <p>JavaScript</p>
-                                <img class="skill_icon" src="img/2js.png" alt="">
-                            </div>
-                            <img src="img/merter.png" alt="">
-                            <p>授業時間：<span class="class_time">60</span>時間</p>
-                        </div><!-- skill_column -->
-                        <p class="skill_description des_left"> 「jQuery」などJavaScriptの基本技術を実践的に学びました。</p>
-                    </div><!-- skill_content -->
-
-
-                    <div class="skill_content fadeLeftTrigger flex">
-                        <div class="skill_column">
-                            <div class="skill_name flex">
-                                <p>WordPress</p>
-                                <img src="img/2wp.png" alt="" class="skill_icon">
-                            </div>
-                            <img src="img/merter.png" alt="">
-                            <p>授業時間：<span class="class_time">54</span>時間</p>
-                        </div><!-- skill_column -->
-                        <p class="skill_description">圧倒的な人気を誇るホームページ作成ソフトを基本から学習しました。</p>
-                    </div><!-- skill_content -->
-
-
-                    <div class="skill_content fadeRightTrigger flex">
-                        <div class="skill_column skill_right">
+                <div class="coding">
+                    <h2 class="title">Coding</h2>
+                    <div class="skill_wrapper">
+                        <div class="skill_item">
                             <div class="skill_name">
-                                <p>Illustrator &nbsp; PhotoShop &nbsp; Xd</p>
-                                <div class="skill_flex">
-                                    <img src="img/illustraror.png" alt="" class="skill_icon">
-                                    <img src="img/photoshop.png" alt="" class="skill_icon">
-                                    <img src="img/XD.png" alt="" class="skill_icon">
-                                </div><!-- skill_flex -->
+                                <h3>HTML5</h3>
+                                <div class="skill_img"><img src="" alt=""></div>
                             </div><!-- skill_name -->
-                            <img src="img/merter.png" alt="">
-                            <p>授業時間：<span class="class_time">50</span>時間</p>
-                        </div><!-- skill_column -->
-                        <p class="skill_description des_left">イラストやロゴマーク、アイコン作成、デザインカンプなどの作成、<br>
-                            基本操作から実務で使えるデザインテクニックを学習しました。</p>
-                    </div><!-- skill_content -->
-
-
-                    <div class="skill_content fadeLeftTrigger flex">
-                        <div class="skill_column">
+                            <p>Webサイト制作に必須のマークアップ言語であるHTMLを基礎から学習しました。</p>
+                        </div><!-- skill_item -->
+                        <div class="skill_item">
                             <div class="skill_name">
-                                <p>Office365</p>
-                                <div class="skill_flex">
-                                    <img src="img/office1.png" alt="" class="skill_icon">
-                                    <img src="img/office2.png" alt="" class="skill_icon">
-                                    <img src="img/office3.png" alt="" class="skill_icon">
-                                </div>
-                            </div>
-                            <img src="img/merter.png" alt="">
-                            <p>授業時間：<span class="class_time">63</span>時間</p>
-                        </div><!-- skill_column -->
-                        <p class="skill_description">ビジネス文書、プレゼン資料作成等、幅広く使用されているオフィス365を学びました。</p>
-                    </div><!-- skill_content -->
-
-
-                </div><!-- skill_contents -->
+                                <h3>CSS3</h3>
+                                <div class="skill_img"><img src="" alt=""></div>
+                            </div><!-- skill_name -->
+                            <p>レイアウトの構成、各ブラウザサイズに応じたレスポンシブデザインについて学びました。</p>
+                        </div><!-- skill_item -->
+                        <div class="skill_item">
+                            <div class="skill_name">
+                                <h3>JavaScript</h3>
+                                <div class="skill_img"><img src="" alt=""></div>
+                            </div><!-- skill_name -->
+                            <p>「Jquery」などJavaScriptの基本秘術を実践的に学びました。</p>
+                        </div><!-- skill_item -->
+                        <div class="skill_item">
+                            <div class="skill_name">
+                                <h3>WordPress</h3>
+                                <div class="skill_img"><img src="" alt=""></div>
+                            </div><!-- skill_name -->
+                            <p>圧倒的な人気を誇るホームページ作成ソフトを基本から学びました。</p>
+                        </div><!-- skill_item -->
+                    </div><!-- skill_wrapper -->
+                </div><!-- coding -->
+                <div class="design">
+                    <h2 class="title">Design</h2>
+                    <div class="skill_wrapper">
+                        <div class="skill_item">
+                            <div class="skill_name">
+                                <h3>Illustrator</h3>
+                                <div class="skill_img"><img src="" alt=""></div>
+                            </div><!-- skill_name -->
+                            <p>Webサイト制作に必須のマークアップ言語であるHTMLを基礎から学習しました。</p>
+                        </div><!-- skill_item -->
+                        <div class="skill_item">
+                            <div class="skill_name">
+                                <h3>Photoshop</h3>
+                                <div class="skill_img"><img src="" alt=""></div>
+                            </div><!-- skill_name -->
+                            <p>基本操作から実務で使えるデザインテクニッ クを学習しデザインを学びました。</p>
+                        </div><!-- skill_item -->
+                        <div class="skill_item">
+                            <div class="skill_name">
+                                <h3>XD</h3>
+                                <div class="skill_img"><img src="" alt=""></div>
+                            </div><!-- skill_name -->
+                            <p>操作を基礎から学びデザインカンプの作成等 実践で活用できるための学習をしました。</p>
+                        </div><!-- skill_item -->
+                    </div><!-- skill_wrapper -->
+                </div><!-- design -->
+                <div class="office">
+                    <h2 class="title">Office</h2>
+                    <div class="skill_wrapper">
+                        <div class="skill_item">
+                            <div class="skill_name">
+                                <h3>Office365</h3>
+                                <div class="skill_img"><img src="" alt=""></div>
+                            </div><!-- skill_name -->
+                            <p>ビジネス文書、プレゼン資料作成等、幅広く使用されているオフィス365を学びました。</p>
+                        </div><!-- skill_item -->
+                    </div><!-- skill_wrapper -->
+                </div><!-- design -->
             </div><!-- padding_wrapper -->
-        </div><!-- skill -->
+        </section><!-- skill -->
 
 
         <div class="padding_wrapper">
-            <div class="works" id="works">
+            <section class="works" id="works">
                 <h2 class="title">Works</h2>
-                <div class="works_contents grid">
-                        <figure class="work_figure">
-                            <a href="../Kaisei-s-Portfolio/cooperatesite/index.html">
-                                <img src="img/cooperatesite.jpg" alt="">
-                            </a>
-                            <figcaption><span class="work_name">コーポレートサイト</span>
-                                <p>架空のコーポレートサイトを制作しました。<br>また、レスポンシブ対応も行いました。</p>
-                            </figcaption>
-                        </figure>
-                    <figure class="video work_figure">
-                        <video src="img/guradation.mp4" autoplay muted loop playsinline></video>
-                    </figure>
-                        <figure class="work_figure">
-                            <a href="https://pc-hana.com/chidori/team-b/">
-                                <img src="img/chidori.jpg" alt="">
-                            </a>
-                            <figcaption><span class="work_name">ちどり化粧品店様</span>
-                                <p>メインコーダーとしてチームで制作を行いました。</p>
-                                <p>女性向けに優しい雰囲気と見やすさを意識しました。</p>
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <figure>
-                        <img src="#" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </div><!-- works_contents -->
-            </div><!-- works -->
+                <div class="work_wrapper">
+                    <div class="work">
+                        <div class="work_img"><img src="" alt=""></div>
+                        <p>コーポーレートサイト<br>https://kaiii.github.io/Kaisei-s-Portfolio/cooperatesite/<br>架空のコーポレートサイトを制作しました。
+                            また、レスポンシブ対応も行いました。</p>
+                    </div><!-- work -->
+                    <div class="work">
+                        <div class="work_img"><img src="" alt=""></div>
+                        <p>ちどり化粧品店&emsp13;様<br>https://pc-hana.com/chidori/team-b/<br>メインコーダーとして、チームで制作をしお客様へ提案を行いました。</p>
+                    </div><!-- work -->
+                    <div class="work">
+                        <div class="work_img"><img src="" alt=""></div>
+                        <p>サイト<br>https://kaiii.github.io/Kaisei-s-Portfolio/dogcafe<br>架空の犬カフェのホームページサイトを制作しました。</p>
+                    </div><!-- work -->
+                </div><!-- work_wrapper -->
+            </section><!-- works -->
         </div><!-- padding_wrapper -->
 
-        <div class="contact gray" id="contact">
+
+        <section class="contact" id="contact">
             <div class="padding_wrapper">
                 <h2 class="title">Contact</h2>
-                <div class="contact_contents">
-                    <p class="contact_content">お仕事のご相談・ご質問などがありましたら以下の連絡先にてご連絡をお願い致します。<br>
-                        Twitter、InstagramのDMでも受け付けております。</p>
-                    <div class="acount">
-                        <p><span class="mailadress">Mail</span>u.kaisei14@gmail.com</p>
-                        <p><span class="twitter">Twitter</span>@u_kaisei0009</p>
-                    </div><!-- acount -->
-                </div><!-- contact_contents -->
+                <p class="contact_sentence">お仕事のご相談・ご質問などがありましたら以下の連絡先にてご連絡をお願い致します。<br>Twitter・InstagramのDMでも受け付けております。</p>
+                <div class="address">
+                    <dl class="contact_dl">
+                        <dt>Mail</dt>
+                        <dd>u.kaisei14@gmail.com</dd>
+                    </dl>
+                    <dl class="contact_dl">
+                        <dt>Twitter</dt>
+                        <dd>@u_kaisei0009</dd>
+                    </dl>
+                </div><!-- address -->
             </div><!-- padding_wrapper -->
-        </div><!-- contact -->
+        </section><!-- contact -->
 
-        <div class="padding_wrapper">
-            <footer>
-                <small>&copy;2022 UCHIYAMA KAISEI</small>
-            </footer>
-        </div><!-- padding_wrapper -->
+        <footer>
+            <small>&copy;2022&nbsp;UCHIYAMA&nbsp;KAISEI</small>
+        </footer>
     </div><!-- wrapper -->
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
