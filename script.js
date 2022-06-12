@@ -33,4 +33,3 @@ for (let i = 0; i < nav_a.length; i++) {
     });
 }
 
-
