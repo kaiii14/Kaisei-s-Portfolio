@@ -246,8 +246,9 @@ skill
 
 .skill_name{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 15px;
+    width: 280px;
 }
 
 .skill_name h3{
@@ -279,6 +280,8 @@ works
 }
 
 .work{
+    max-width: 550px;
+    margin: 0 auto;
     margin-bottom: 70px;
 }
 
@@ -304,6 +307,11 @@ contact
     margin-bottom: 54px;
     font-size: 18px;
     text-align: center;
+}
+
+.address{
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .contact dl{
@@ -349,6 +357,10 @@ small{
 
     .nav_pc{
         display: block;
+    }
+
+    .sp{
+        display: none;
     }
 
     #hamburger_menu,#nav_sp{
@@ -424,7 +436,7 @@ about
 }
 
 .profile_sentence{
-    font-size: 28px;
+    font-size: 20px;
     text-align: left;
 }
 
@@ -434,11 +446,15 @@ about
     padding: 40px 30px 40px 100px;
 }
 
+dt{
+    font-size: 25px;
+}
+
 dl{
     padding:0;
     background-image: none;
     margin-bottom: 40px;
-    font-size: 28px;
+    font-size: 20px;
 }
 
 dl:last-child{
@@ -446,8 +462,81 @@ dl:last-child{
 }
 
 
+/* ============================
+favorite
+==============================*/
+.fav_container{
+    display: flex;
+    justify-content: space-between;
+}
 
-    
+.fav_item{
+    text-align: center;
+    border: 1px solid #000;
+    padding: 0 20px;
+    padding-top: 60px;
+    padding-bottom: 23px;
+    margin-right: 16px;
+}
+
+.fav_item:last-child{
+    margin-right: 0;
+}
+
+.fav_item p:nth-of-type(2){
+    font-size: 20px;
+}
+
+.fav_img{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+
+/* ================================
+skill
+==================================*/
+.skill_wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 2fr));  
+    column-gap: 30px;
+}
+
+.skill_name{
+    width: 350px;
+}
+
+.skill_name h3{
+    font-size: 48px;
+}
+
+/* ================================
+work
+==================================*/
+.work_wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 2fr));
+}
+
+.work{
+    width: 100%;
+}
+
+.work_img{
+    height: 300px;
+}
+
+/* ================================
+contact
+==================================*/
+.contact dt{
+    font-size: 35px;
+}
+.contact dd{
+    font-size: 30px;
+}
 
     
 }/*media screen*/
