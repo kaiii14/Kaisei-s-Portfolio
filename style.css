@@ -372,6 +372,10 @@ small{
         display: none;
     }
 
+    .pc_a{
+        color: #fff;
+    }
+
     #hamburger_menu,#nav_sp{
         display: none;
     }
