@@ -91,10 +91,12 @@ haamburger_menu
     width: 30px;
     height: 2px;
     left: 9px;
+    transition: all 2s;
 }
 
 .span1{
     top: 12px;
+
 }
 
 .span2{
@@ -104,6 +106,25 @@ haamburger_menu
 .span3{
     top: 32px;
 }
+
+.cross span{
+    transition: all 2s;
+}
+
+.cross .span1{
+    transform: rotate(45deg);
+    top: 50%;
+    left: 9px;
+}
+.cross .span2{
+    opacity: 0;
+}
+.cross .span3{
+    transform: rotate(-45deg);
+    top: 50%;
+    left: 9px;
+}
+
 /* ==================================== */
 
 .main_title{
@@ -120,6 +141,9 @@ haamburger_menu
 }
 
 .nav_sp{
+    position: absolute;
+    top: 0;
+    left: 150%;
     position: fixed;
     background-color: rgba(255, 255, 255, 0.9);
     height: 100vh;
@@ -128,7 +152,6 @@ haamburger_menu
     padding-left: 50px;
     z-index: 90;
     font-size: 28px;
-    transform: translateX(100%);
     transition: all 2s;
 }
 
@@ -142,7 +165,7 @@ nav li{
 }
 
 .open{
-    transform: translateX(0);
+    left: 0;
 }
 
 
@@ -291,6 +314,7 @@ works
 
 .work_img{
     height: 200px;
+    text-align: center;
 }
 
 /* .portfolio_url{

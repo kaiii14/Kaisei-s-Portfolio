@@ -21,8 +21,10 @@ var swiper = new Swiper(".mySwiper", {
 
 
 let nav = document.getElementById('nav_sp');
+let ham = document.getElementById('hamburger_menu');
 document.getElementById('hamburger_menu').onclick = function () {
     nav.classList.toggle("open");
+    ham.classList.toggle("cross");
 }
 
 
