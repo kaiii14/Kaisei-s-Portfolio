@@ -61,6 +61,10 @@ header{
     background-color: rgba(0, 255, 255,0.5);
 }
 
+.header_wrapper h1,nav a{
+    font-family: "cursive";
+}
+
 header h1{
     text-align: center;
 }
