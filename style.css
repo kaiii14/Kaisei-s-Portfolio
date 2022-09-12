@@ -35,6 +35,21 @@ a{
     margin-bottom: 36px;
 }
 
+.fadeIn{
+    animation: fadein 2s;
+}
+
+@keyframes fadein{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        top:0;
+        opacity: 1;
+    }
+}
+
 .main-visual{
     height: 100vh;
     position: relative;
